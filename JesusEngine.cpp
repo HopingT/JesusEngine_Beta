@@ -245,8 +245,8 @@ HRESULT InitDevice()
         DXGI_FORMAT_D24_UNORM_S8_UINT);
 
     g_deviceContext.m_deviceContext->OMSetRenderTargets(1, &g_pRenderTargetView, g_depthStencilView.m_depthStencilView);
-
-    // Setup the viewport
+    
+    // Setup the viewportqw
     D3D11_VIEWPORT vp;
     vp.Width = (float)g_window.m_height;
     vp.Height = (float)g_window.m_width;

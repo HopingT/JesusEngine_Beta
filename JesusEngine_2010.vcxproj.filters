@@ -38,6 +38,9 @@
     <ClInclude Include="include\Window.h">
       <Filter>Include</Filter>
     </ClInclude>
+    <ClInclude Include="include\Texture.h">
+      <Filter>Include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="JesusEngine.cpp" />
