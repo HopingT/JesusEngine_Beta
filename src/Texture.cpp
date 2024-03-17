@@ -4,14 +4,19 @@
 
 Texture::~Texture()
 {
+    /*
     if (m_texture != nullptr) {
         SAFE_RELEASE(m_texture);
     }
     else if (m_textureFromImg != nullptr) {
         SAFE_RELEASE(m_textureFromImg);
-    }
+    }*/
 }
 
+// Inicializa la textura desde un archivo de imagen.Crea una vista de recurso
+//  (ID3D11ShaderResourceView) a partir de un archivo de imagen 
+// especificado (textureName).
+//Tambien se asegura de que el device no sea nulo y maneja los errores.
 void Texture::init(Device device, std::string textureName)
 {
     if (device.m_device == nullptr) {
@@ -31,6 +36,9 @@ void Texture::init(Device device, std::string textureName)
     }
 }
 
+//Inicializa la textura con parametros especificos como ancho, alto, formato, etc. 
+//Se crea una textura 2D
+//Maneja los errores
 void Texture::init(Device device,
     unsigned int width,
     unsigned int height,
@@ -56,7 +64,6 @@ void Texture::init(Device device,
     desc.SampleDesc.Count = 1;
     desc.SampleDesc.Quality = 0;
     desc.Usage = D3D11_USAGE_DEFAULT;
-    //BindFlag Determina que tipo de textura es
     desc.BindFlags = BindFlags;
     desc.CPUAccessFlags = 0;
     desc.MiscFlags = 0;

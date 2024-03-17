@@ -50,14 +50,15 @@ public:
     /// </summary>
     void destroy();
     // Prototipo de función destroy que probablemente se utilizará para destruir la instancia de la cadena de intercambio.
-
+    void present();
 public:
     IDXGISwapChain* m_swapChain = nullptr;
+    D3D_DRIVER_TYPE m_driverType = D3D_DRIVER_TYPE_NULL;
     // Puntero público a IDXGISwapChain, que probablemente sea el objeto principal de la cadena de intercambio.
 
 private:
-    D3D_DRIVER_TYPE m_driverType = D3D_DRIVER_TYPE_NULL;
-    D3D_FEATURE_LEVEL m_feature_level = D3D_FEATURE_LEVEL_11_0;
+    
+    D3D_FEATURE_LEVEL m_featureLevel = D3D_FEATURE_LEVEL_11_0;
     // Variables miembro privadas que almacenan el tipo de controlador y el nivel de características de la cadena de intercambio.
 };
 

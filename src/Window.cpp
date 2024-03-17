@@ -8,6 +8,15 @@ Window::~Window()
 {
 }
 
+// La clase Window se utiliza para inicializar la ventana.
+//  Toma como parámetros el identificador de instancia de la aplicacion 
+// (hInstance), el comando de visualizacion (nCmdShow) y el procedimiento 
+// de ventana (wndproc)
+//Se registra la clase Ventana
+//Se crea la ventana con las dimensiones y el estilo especificado
+//Se ajusta el tamaño de la ventana para que se incluya el marco
+//Se obtinen las dimensiones de la ventana y se actualizan las variables
+
 HRESULT Window::init(HINSTANCE hInstance, int nCmdShow, WNDPROC wndproc)
 {
     m_hInst = hInstance;

@@ -27,12 +27,47 @@ OutputDebugStringA(_ClassName);                                        \
 OutputDebugStringA(" : In Function : ");                               \
 OutputDebugStringA(_FunctionName);                                     \
 OutputDebugStringA(" : ");                                             \
-OutputDebugStringA(_OutputMessage);                                    \
+OutputDebugStringA(OutputMessage);                                    \
 OutputDebugStringA("\n");
 
 #define WARNING( s )                         \
 {                                            \
-   std::wostringstream os_;                  \
-   os_ << s;                                 \
-   OutputDebugStringW( os_.str().c_str() );  \
+   std::wostringstream os;                  \
+   os << s;                                 \
+   OutputDebugStringW( os.str().c_str() );  \
 }
+
+struct SimpleVertex
+
+{
+
+    XMFLOAT3 Pos;
+
+    XMFLOAT2 Tex;
+
+};
+
+struct LoadData
+{
+    std::string name;
+    std::vector <SimpleVertex> vertex;
+    std::vector <unsigned int> index;
+    int numVertex;
+    int numIndex;
+};
+
+
+
+struct Mesh {
+
+    std::string name;
+
+    std::vector <SimpleVertex> vertex;
+
+    std::vector <unsigned int> index;
+
+    int numVertex;
+
+    int numIndex;
+
+};

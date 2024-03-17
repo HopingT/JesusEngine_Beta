@@ -59,11 +59,11 @@ Device::CreateDepthStencilView(ID3D11Resource* pResource,
 	HRESULT hr = S_OK;
 	//Check if 
 	if (pResource == nullptr) {
-		WARNING("ERROR: Device::CreateDepthStencilView : Error in data from params [CHECK FOR ID3D11Resource* pResource]\n");
+		WARNING("ERROR: Device::CreateDepthStencilView : Error in data from params [CHECK FOR CREATION ID3D11Resource* pResource]\n");
 		exit(1);
 	}
 	else if (ppDepthStencilView == nullptr) {
-		WARNING("ERROR: Device::CreateDepthStencilView : Error in data from params [CHECK FOR D3D11_DEPTH_STENCIL_VIEW_DESC* pDesc]\n");
+		WARNING("ERROR: Device::CreateDepthStencilView : Error in data from params [CHECK FOR CREATION D3D11_DEPTH_STENCIL_VIEW_DESC* pDesc]\n");
 		exit(1);
 	}
 	else {
@@ -170,10 +170,8 @@ Device::CreateBuffer(const D3D11_BUFFER_DESC* pDesc,
 		exit(1);
 	}
 	else {
-		hr = m_device->CreateBuffer(pDesc,
-			pInitialData,
-			ppBuffer);
-		WARNING("Device::CreateBuffer : [CREATION OF RESOURCE : OK]\n");
+		hr = m_device->CreateBuffer(pDesc, pInitialData, ppBuffer);
+		WARNING("Device::CreateBuffer : [CREATION OF RESOURCE : OK] \n");
 	}
 	return hr;
 }
