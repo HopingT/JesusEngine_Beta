@@ -264,7 +264,7 @@ HRESULT InitDevice()
         { XMFLOAT3(-1.0f, 1.0f, 1.0f), XMFLOAT2(0.0f, 1.0f) },
     };
 
-    g_mesh = g_modelLoader.Load("simio.obj");
+    g_mesh = g_modelLoader.Load("Porsche.obj");
     g_vertexBuffer.init(g_device, g_mesh, D3D11_BIND_VERTEX_BUFFER);
     /*for (SimpleVertex vertex : vertices)
     {
