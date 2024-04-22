@@ -161,7 +161,7 @@
       <FloatingPointModel>Fast</FloatingPointModel>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <AdditionalIncludeDirectories>./include/;DXUT\Core;DXUT\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./include/;DXUT\Core;DXUT\Optional;C:\Users\jeshr\Documents\VisualProyectos2024\JesusEngine_Beta\imgui-docking;C:\Users\jeshr\Documents\VisualProyectos2024\JesusEngine_Beta\imgui-docking\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
       <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
@@ -204,7 +204,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FloatingPointModel>Fast</FloatingPointModel>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <AdditionalIncludeDirectories>./include/;DXUT\Core;DXUT\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./include/;DXUT\Core;DXUT\Optional;C:\Users\jeshr\Documents\VisualProyectos2024\JesusEngine_Beta\imgui-docking;C:\Users\jeshr\Documents\VisualProyectos2024\JesusEngine_Beta\imgui-docking\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
       <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -248,7 +248,7 @@
       <FloatingPointModel>Fast</FloatingPointModel>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <AdditionalIncludeDirectories>./include/;DXUT\Core;DXUT\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./include/;DXUT\Core;DXUT\Optional;C:\Users\jeshr\Documents\VisualProyectos2024\JesusEngine_Beta\imgui-docking;C:\Users\jeshr\Documents\VisualProyectos2024\JesusEngine_Beta\imgui-docking\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -292,7 +292,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FloatingPointModel>Fast</FloatingPointModel>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <AdditionalIncludeDirectories>./include/;DXUT\Core;DXUT\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./include/;DXUT\Core;DXUT\Optional;C:\Users\jeshr\Documents\VisualProyectos2024\JesusEngine_Beta\imgui-docking;C:\Users\jeshr\Documents\VisualProyectos2024\JesusEngine_Beta\imgui-docking\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -337,7 +337,7 @@
       <FloatingPointModel>Fast</FloatingPointModel>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <AdditionalIncludeDirectories>./include/;DXUT\Core;DXUT\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./include/;DXUT\Core;DXUT\Optional;C:\Users\jeshr\Documents\VisualProyectos2024\JesusEngine_Beta\imgui-docking;C:\Users\jeshr\Documents\VisualProyectos2024\JesusEngine_Beta\imgui-docking\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
       <PreprocessorDefinitions>WIN32;NDEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -381,7 +381,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FloatingPointModel>Fast</FloatingPointModel>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <AdditionalIncludeDirectories>./include/;DXUT\Core;DXUT\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./include/;DXUT\Core;DXUT\Optional;C:\Users\jeshr\Documents\VisualProyectos2024\JesusEngine_Beta\imgui-docking;C:\Users\jeshr\Documents\VisualProyectos2024\JesusEngine_Beta\imgui-docking\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
       <PreprocessorDefinitions>WIN32;NDEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -417,6 +417,13 @@
   </ItemDefinitionGroup>
   <ItemGroup />
   <ItemGroup>
+    <ClCompile Include="imgui-docking\backends\imgui_impl_dx11.cpp" />
+    <ClCompile Include="imgui-docking\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui-docking\imgui.cpp" />
+    <ClCompile Include="imgui-docking\imgui_demo.cpp" />
+    <ClCompile Include="imgui-docking\imgui_draw.cpp" />
+    <ClCompile Include="imgui-docking\imgui_tables.cpp" />
+    <ClCompile Include="imgui-docking\imgui_widgets.cpp" />
     <ClCompile Include="JesusEngine.cpp" />
     <ClCompile Include="src\DepthStencilView.cpp" />
     <ClCompile Include="src\Device.cpp" />
@@ -429,6 +436,7 @@
     <ClCompile Include="src\ShaderProgram.cpp" />
     <ClCompile Include="src\SwapChain.cpp" />
     <ClCompile Include="src\Texture.cpp" />
+    <ClCompile Include="src\UserInterface.cpp" />
     <ClCompile Include="src\Viewport.cpp" />
     <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
@@ -436,6 +444,14 @@
     <None Include="JesusEngine.fx" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="imgui-docking\backends\imgui_impl_dx11.h" />
+    <ClInclude Include="imgui-docking\backends\imgui_impl_win32.h" />
+    <ClInclude Include="imgui-docking\imconfig.h" />
+    <ClInclude Include="imgui-docking\imgui.h" />
+    <ClInclude Include="imgui-docking\imgui_internal.h" />
+    <ClInclude Include="imgui-docking\imstb_rectpack.h" />
+    <ClInclude Include="imgui-docking\imstb_textedit.h" />
+    <ClInclude Include="imgui-docking\imstb_truetype.h" />
     <ClInclude Include="include\Buffer.h" />
     <ClInclude Include="include\DepthStencilView.h" />
     <ClInclude Include="include\Device.h" />
@@ -450,6 +466,7 @@
     <ClInclude Include="include\ShaderProgram.h" />
     <ClInclude Include="include\SwapChain.h" />
     <ClInclude Include="include\Texture.h" />
+    <ClInclude Include="include\UserInterface.h" />
     <ClInclude Include="include\Viewport.h" />
     <ClInclude Include="include\Window.h" />
     <ResourceCompile Include="JesusEngine.rc" />

@@ -85,11 +85,11 @@ void Texture::init(Device device,
     }
 }
 void
-Texture::render(DeviceContext& deviceContext, unsigned int StarSlot) {
+Texture::render(DeviceContext& deviceContext, unsigned int StarSlot, unsigned int NumViews) {
     if (m_textureFromImg != nullptr) {
         ID3D11ShaderResourceView* nullSRV[] = { nullptr };
-        deviceContext.PSSetShaderResources(StarSlot, 1, nullSRV);
-        deviceContext.PSSetShaderResources(StarSlot, 1, &m_textureFromImg);
+        deviceContext.PSSetShaderResources(StarSlot, NumViews, nullSRV);
+        deviceContext.PSSetShaderResources(StarSlot, NumViews, &m_textureFromImg);
     }
 }
 

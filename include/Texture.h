@@ -4,57 +4,56 @@ class Device;
 class DeviceContext;
 
 /// <summary>
-/// Represents a texture, which can be used for rendering purposes.
+/// This class is in charge of generatting the textures to model (in this case in the cube)
 /// </summary>
-class Texture {
+class
+    Texture {
 
 public:
     Texture() = default;
     ~Texture();
+    /// <summary>
+    /// The metod get the texture name 
+    /// </summary>
+    /// <param name="device"> look your device? </param>
+    /// <param name="textureName"> look and get the texture name </param>
+    void
+        init(Device device, std::string textureName);
 
     /// <summary>
-    /// Initializes the texture using the provided Device and texture name.
+    /// The metod is in charge to establishing the dimensions and format of the textures 
     /// </summary>
-    /// <param name="device">Device object used for initialization.</param>
-    /// <param name="textureName">Name of the texture.</param>
-    void init(Device device, std::string textureName);
+    /// <param name="device"> look your device? </param>
+    /// <param name="width"> Establish width textures</param>
+    /// <param name="height"> Establish height textures</param>
+    /// <param name="Format"> Establish format textures</param>
+    /// <param name="BlindFlags"> ??? </param>
+    void
+        init(Device device,
+            unsigned width,
+            unsigned height,
+            DXGI_FORMAT Format,
+            unsigned int BlindFlags);
+
+    void
+        update();
 
     /// <summary>
-    /// Initializes the texture with the specified width, height, format, and flags using the provided Device.
+    /// The metod renders the texture
     /// </summary>
-    /// <param name="device">Device object used for initialization.</param>
-    /// <param name="width">Width of the texture.</param>
-    /// <param name="height">Height of the texture.</param>
-    /// <param name="Format">Format of the texture.</param>
-    /// <param name="BlindFlags">Flags for the texture.</param>
-    void init(Device device,
-        unsigned width,
-        unsigned height,
-        DXGI_FORMAT Format,
-        unsigned int BlindFlags);
+    /// <param name="deviceContext"> The device context to be used for rendering </param>
+    /// <param name="StarSlot"> The starting slot for rendering </param>
+    void
+        render(DeviceContext& deviceContext, unsigned int StarSlot, unsigned int NumViews);
 
-    /// <summary>
-    /// Updates the texture.
-    /// </summary>
-    void update();
-
-    /// <summary>
-    /// Renders the texture using the specified device context and slot.
-    /// </summary>
-    /// <param name="deviceContext">DeviceContext object used for rendering.</param>
-    /// <param name="StarSlot">Starting slot for rendering.</param>
-    void render(DeviceContext& deviceContext, unsigned int StarSlot);
-
-    /// <summary>
-    /// Destroys the texture instance.
-    /// </summary>
-    void destroy();
+    void
+        destroy();
 
 public:
-    // The variable is responsible for handling a texture resource as data.
+    //The variable is in charge from handle a texture resource as data
     ID3D11Texture2D* m_texture = nullptr;
 
-    // This variable is responsible for handling a texture resource as image data.
+    //This variable is in charge of a handle texture resource as image data
     ID3D11ShaderResourceView* m_textureFromImg;
 
 };
